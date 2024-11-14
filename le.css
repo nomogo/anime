@@ -1,0 +1,40 @@
+#slider
+{
+    width: 80%;
+    margin: 20px auto;
+ }
+ #slider img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevents extra space below images */
+  }
+ 
+  .slick-prev, .slick-next 
+  {
+    font-size: 1em;
+    color: #333;
+    position: absolute; /* Important for positioning */
+    top: 1px; /* Vertically center */
+    transform: translateY(-50%); /* Fine-tune vertical centering */
+    z-index: 1;  /* Ensure they are on top */
+    padding: 10px;  /* Add some padding around the icons */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 500px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+.slick-next {
+    left:6%;
+}
+#pager {
+    text-align: center;
+    margin-top: 10px;
+  }
+  #pager span {
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  #pager .current {
+    font-weight: bold;
+  }
